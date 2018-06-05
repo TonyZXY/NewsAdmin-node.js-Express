@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="col-md-2">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news/news">
+                            <span data-feather="home"></span>
+                            列表 <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item disable">
+                        <a class="nav-link" href="/news/add">
+                            <span data-feather="file"></span>
+                            添加
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news/news">
+                            <span data-feather="shopping-cart"></span>
+                            查询
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <form class="col-5" method="post" action="/news/addNews">
+        <div class="form-group">
+            <label for="exampleInputEmail1">标题</label>
+            <input type="text" class="form-control" id="exampleInputEmail1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">作者</label>
+            <input type="text" class="form-control" id="authorLabel">
+        </div>
+        <div class="form-group">
+            <label>
+                标签
+            </label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                       checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    标签1（国内）
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    国际
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1"
+                       checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    趋势
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    深度
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">简介</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">图片地址</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">文章地址</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
